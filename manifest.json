@@ -1,15 +1,23 @@
 {
- “manifest_version”: 2,
- “name”: “lazyjira”,
- “description”: “opens jira tickets for you with defualt values”,
- “version”: “1”,
- “author”: “yuvals”,
-"browser_action": {
-   "default_icon": "lazyunicornicon.png",
-   “default_title”: “open a jira ?”
- },
-“chrome_url_overrides” : {
-  “newtab”: “newtab.html”
-},
- “permissions”: [“activeTab”]
+ "name": "lazyjira",
+ "description": "opens jira tickets for you with defualt values",
+ "version": "1.0",
+ "author": "yuvals",
+
+"background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+ "page_action": {
+      "default_popup": "popup.html",
+       "default_icon": {
+       	"16": "lazycat.jpg",
+		"32": "lazycat.jpg",
+		"64": "lazycat.jpg",
+	   "128": "lazycat.jpg"
+       }
+    },
+"permissions": ["declarativeContent", "storage"],
+
+ "manifest_version": 2
 }
