@@ -1,0 +1,15 @@
+{
+ “manifest_version”: 2,
+ “name”: “lazyjira”,
+ “description”: “opens jira tickets for you with defualt values”,
+ “version”: “1”,
+ “author”: “yuvals”,
+"browser_action": {
+   "default_icon": "lazyunicornicon.png",
+   “default_title”: “open a jira ?”
+ },
+“chrome_url_overrides” : {
+  “newtab”: “newtab.html”
+},
+ “permissions”: [“activeTab”]
+}
